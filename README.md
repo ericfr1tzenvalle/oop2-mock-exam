@@ -47,10 +47,3 @@ Permitir a criação de diferentes tipos de entrega (`Caminhao`, `Navio`, `Drone
 
 > ⚠️ Observação: a pasta `exercise2/` contém um `README.md` com explicação detalhada do padrão, exemplos de uso, e o diagrama UML em Mermaid.
 
----
-
-## 🧾 Observações finais
-- Cada exercício tem sua própria pasta com código fonte (`src/`) e um `README.md` interno que inclui **explicação detalhada** e **UML** (Mermaid).  
-- Projeto destinado a fins **acadêmicos** e de aprendizado sobre padrões de projeto em Java.
-
----
