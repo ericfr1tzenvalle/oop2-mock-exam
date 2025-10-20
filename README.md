@@ -1,7 +1,9 @@
-# Padrões de Projeto em Java (Simulado)
+# Simulado
 
-Este repositório contém a resolução de **dois exercícios** de Programação Orientada a Objetos (POO) em Java, focados na aplicação de **Padrões de Projeto (Design Patterns)**.  
+Este repositório contém a resolução de **dois exercícios** focados na aplicação de **Padrões de Projeto (Design Patterns)** referentes ao Simulado da Disciplina de POO II.
 Cada exercício possui sua própria pasta exercise e um `README.md` detalhado (incluindo diagrama UML).
+> ⚠️ Observação: O repositório também conta com um **exercíco bônus** que aborda (Observer, Factory e Singleton) juntos.
+
 
 ---
 
@@ -47,3 +49,27 @@ Permitir a criação de diferentes tipos de entrega (`Caminhao`, `Navio`, `Drone
 
 > ⚠️ Observação: a pasta `exercise2/` contém um `README.md` com explicação detalhada do padrão, exemplos de uso, e o diagrama UML em Mermaid.
 
+---
+
+## Exercício 3 – Sistema de Notificações
+**Padrões Utilizados:** Observer, Factory, Singleton
+
+**Objetivo:**  
+Criar um sistema de notificações que possa enviar mensagens por diferentes canais (`Email`, `Push`, `Sms`) de forma flexível e desacoplada.  
+O sistema também mantém o histórico de pedidos e notifica automaticamente os interessados sobre mudanças de status.
+
+**Papel das classes:**  
+- `Pedido` = Subject (Observer)  
+- `Gerenciador` = Singleton responsável por gerenciar as notificações  
+- `Notificacao` = Interface de notificação  
+- `Email`, `Push`, `Sms` = Implementações concretas de `Notificacao`  
+- `FactoryNotificacao` / `FactoryEmail` / `FactoryPush` / `FactorySms` = Criação desacoplada de notificações (Factory Method)
+
+**Fluxo resumido:**  
+1. Um `Pedido` é criado e registrado no `Gerenciador`.  
+2. Quando o status do pedido muda, todos os observadores (notificações) são acionados automaticamente.  
+3. O `Gerenciador` garante que apenas uma instância do sistema de notificações exista (Singleton).  
+4. Novos tipos de notificações podem ser adicionados sem alterar o código existente (Factory Method).
+
+> ⚠️ Observação: a pasta `exercise3/` contém um `README.md` com explicação detalhada do padrão, exemplos de uso e o diagrama UML em Mermaid.
+---
