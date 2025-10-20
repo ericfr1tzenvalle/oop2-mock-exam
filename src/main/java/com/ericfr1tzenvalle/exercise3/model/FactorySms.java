@@ -1,8 +1,8 @@
 package com.ericfr1tzenvalle.exercise3.model;
 
-public class FactoryNotificacaoEmail implements FactoryNotificacao {
+public class FactorySms implements FactoryNotificacao {
     @Override
     public Notificacao criarNotificacao() {
-        return new Email();
+        return new Sms();
     }
 }

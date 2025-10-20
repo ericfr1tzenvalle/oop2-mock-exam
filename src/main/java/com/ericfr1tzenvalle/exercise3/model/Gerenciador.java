@@ -22,13 +22,13 @@ public class Gerenciador {
     }
 
     public void run(){
-        FactoryNotificacao factoryEmail = new FactoryNotificacaoEmail();
+        FactoryNotificacao factoryEmail = new FactoryEmail();
         Pedido pedidoEmail = realizarPedido(factoryEmail);
 
-        FactoryNotificacao factorySms = new FactoryNotificacaoSms();
+        FactoryNotificacao factorySms = new FactorySms();
         Pedido pedidoSms = realizarPedido(factorySms);
 
-        FactoryNotificacao factoryPush = new FactoryNotificacaoPush();
+        FactoryNotificacao factoryPush = new FactoryPush();
         Pedido pedidoPush = realizarPedido(factoryPush);
 
         // Segunda etapa: Pago

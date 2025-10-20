@@ -50,9 +50,6 @@ public class Pedido implements Subject {
         return status;
     }
 
-    public int getId() {
-        return this.id;
-    }
     public void setNotificacao(Notificacao notificacao) {
         this.notificacao = notificacao;
         addObserver(notificacao);
