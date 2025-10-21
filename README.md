@@ -1,10 +1,15 @@
-# Simulado
+# Simulado (Mock Exam)
 
 Este repositório contém a resolução de **dois exercícios** focados na aplicação de **Padrões de Projeto (Design Patterns)** referentes ao Simulado da Disciplina de POO II.
 Cada exercício possui sua própria pasta exercise e um `README.md` detalhado (incluindo diagrama UML).
 > ⚠️ Observação: O repositório também conta com um **exercíco bônus** que aborda (Observer, Factory e Singleton) juntos.
 
+### 🇺🇸 English Introduction  
 
+This repository contains the solutions for **three exercises** focused on applying **Design Patterns in Java**, developed for the **Object-Oriented Programming II mock exam**.  
+Each exercise is organized in its own folder with a detailed `README.md` and **Mermaid UML diagrams**.  
+
+> ⚠️ The repository also includes a **bonus exercise (Exercise 3)** that combines **Observer**, **Factory**, and **Singleton** patterns.
 ---
 
 ## Exercício 1 – Sistema de Pedidos para Restaurante
